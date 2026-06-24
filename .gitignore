@@ -1,0 +1,20 @@
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Mac system files
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Power BI temp files
+*.tmp
+
+# Local database files, optional later
+*.db
+*.sqlite
+*.sqlite3
