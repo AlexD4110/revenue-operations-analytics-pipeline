@@ -1,0 +1,16 @@
+rule_name,table_name,severity,status,failed_count,recommended_action
+Opportunity should have an account when available,sales_pipeline,Medium,Fail,1425,Review opportunities without accounts because they cannot be included in account-level reporting.
+Opportunity IDs should be unique,sales_pipeline,Critical,Pass,0,Review duplicate opportunity IDs and keep one trusted record per opportunity.
+Opportunity product should exist in products table,sales_pipeline,Critical,Pass,0,Correct product names or update the products dimension table.
+Opportunity sales agent should exist in sales teams table,sales_pipeline,Critical,Pass,0,Correct sales agent names or update the sales teams dimension table.
+Won opportunities should have a close date,sales_pipeline,Critical,Pass,0,Add close dates for won opportunities.
+Won opportunities should have a positive close value,sales_pipeline,Critical,Pass,0,Add or correct close values for won opportunities.
+Deal stage should be an approved value,sales_pipeline,High,Pass,0,"Standardize deal_stage values to Prospecting, Engaging, Won, or Lost."
+Opportunity account should exist in accounts table,sales_pipeline,High,Pass,0,Correct account names or update the accounts dimension table.
+Non-prospecting opportunities should have an engage date,sales_pipeline,High,Pass,0,Add engage dates for opportunities that have moved beyond prospecting.
+Lost opportunities should have a close date,sales_pipeline,High,Pass,0,Add close dates for lost opportunities.
+Close date should not occur before engage date,sales_pipeline,High,Pass,0,Review date fields and correct records where close_date occurs before engage_date.
+Account names should be unique,accounts,High,Pass,0,Review duplicate account names and determine whether records should be merged.
+Product names should be unique,products,High,Pass,0,Review duplicate product names and keep one trusted product record.
+Sales agent names should be unique,sales_teams,High,Pass,0,Review duplicate sales agent records and keep one trusted sales team record.
+Product sales price should be positive,products,High,Pass,0,Review product pricing and correct missing or non-positive sales prices.
